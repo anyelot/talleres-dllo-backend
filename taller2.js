@@ -9,7 +9,7 @@ function findMax(numbers) {
 }
 
 // Punto 2
-function includes(numbers, num) {
+function includes(numbers, num ) {
     if (!numbers?.length) return false;
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] === num) return true;
