@@ -62,6 +62,6 @@ app.post('/users', (req, res) => {
     res.json({ message: 'Usuario agregado', usuario: usuarioNuevo });
 });
 
-app.listen(PORT, () => { console.log('Servidor corriendo en puerto ${PORT}') });
+app.get('/', (req,res)=>{res.send('Servidor funcionando correctamente')});
 
-console.log(estudiantes)
+app.listen(PORT, () => { console.log(`Servidor corriendo en puerto http://localhost:${PORT}`)});
